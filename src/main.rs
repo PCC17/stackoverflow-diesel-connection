@@ -16,7 +16,7 @@ where
     T: Connection<Backend = U, TransactionManager = AnsiTransactionManager>,
     U: UsesAnsiSavepointSyntax + TypeMetadata + Backend + 'static
 {
-    connection: T,
+    connection: T, 
 }
 
 impl<T, U> GenericDatabaseConnector<T, U>
